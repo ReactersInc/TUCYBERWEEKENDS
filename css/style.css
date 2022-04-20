@@ -63,6 +63,9 @@
  */
 /** @group Base */
 /** @section Reset Styles */
+
+
+
 a:focus,
 button:focus {
 	outline: none !important;
@@ -1865,7 +1868,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .block-address a:hover {
-	color: #f09922;
+	color: #22f04f;
 }
 
 .block-address .icon-rect.icon-white[class*='facebook'], .block-address .icon-rect.icon-white[class*='twitter'], .block-address .icon-rect.icon-white[class*='linkedin'], .block-address .icon-rect.icon-white[class*='youtube'] {
@@ -1877,8 +1880,8 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .block-address .icon-rect.icon-white:after {
-	background-image: -webkit-linear-gradient(left, #ef7630 0%, #f09922 100%);
-	background-image: linear-gradient(to right, #ef7630 0%, #f09922 100%);
+	background-image: -webkit-linear-gradient(left, #088f08 0%, #f09922 100%);
+	background-image: linear-gradient(to right, #829708 0%, #f09922 100%);
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEF7630', endColorstr='#FFF09922', GradientType=1);
 }
@@ -3031,6 +3034,7 @@ hr {
 .button-secondary:active {
 	color: #ffffff;
 	z-index: 1;
+	border-radius: 20px;
 }
 
 .button-primary:before, .button-primary:after, .button-primary:focus:before, .button-primary:focus:after, .button-primary:active:before, .button-primary:active:after,
@@ -6908,7 +6912,7 @@ html.tablet .ui-to-top {
 	padding: 112px 0 81px;
 	overflow-y: auto;
 	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
+	/* -webkit-overflow-scrolling: touch; */
 	font-size: 16px;
 	line-height: 34px;
 	transform: translateX(-110%);
@@ -6919,7 +6923,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap::-webkit-scrollbar {
-	width: 4px;
+	width: 0px;
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap::-webkit-scrollbar-thumb {
@@ -8691,7 +8695,7 @@ button.swiper-pagination-bullet {
 
 .section-swiper-content-overlay {
 	z-index: 1;
-	border-top-color: rgba(240, 0, 255, 0.7);
+	border-top-color: rgba(84, 241, 11, 0.7);
 	mix-blend-mode: soft-light;
 }
 

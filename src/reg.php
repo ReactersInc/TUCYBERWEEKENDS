@@ -17,16 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `misra` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$email', '$name', '$roll', '$dept', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html");
             exit();
         }
@@ -42,16 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `sureshv` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$email', '$name', '$roll', '$dept', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html");
             exit();
         }
@@ -67,16 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `fifa` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$email', '$name', '$roll', '$dept', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html");
             exit();
         }
@@ -92,16 +83,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `essay` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$email', '$name', '$roll', '$dept', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html");
             exit();
         }
@@ -124,16 +112,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `bgmi` (`teamname`, `temail`, `tname`, `trollno`, `tdept`, `m1name`, `m1rollno`, `m2name`, `m2rollno`, `m3name`, `m3rollno`, `timestamp`) VALUES ('$team', '$temail', '$tname', '$troll', '$tdept', '$m1name', '$m1roll', '$m2name', '$m2roll', '$m3name', '$m3roll', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html?err=1");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html?err=2");
             exit();
         }
@@ -158,16 +143,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `valo` (`teamname`, `temail`, `tname`, `trollno`, `tdept`, `m1name`, `m1rollno`, `m2name`, `m2rollno`, `m3name`, `m3rollno`, `m4name`, `m4rollno`, `timestamp`) VALUES ('$team', '$temail', '$tname', '$troll', '$tdept', '$m1name', '$m1roll', '$m2name', '$m2roll', '$m3name', '$m3roll', '$m4name', '$m4roll', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html?err=1");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html?err=2");
             exit();
         }
@@ -184,16 +166,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO `iothon` (`teamname`, `temail`, `tname`, `trollno`, `tdept`, `timestamp`) VALUES ('$team', '$temail', '$tname', '$troll', '$tdept', current_timestamp());";
             $res = mysqli_query($con, $sql);
             if ($res) {
-                echo 'Registered';
                 header("Location: ../200.html");
                 exit();
             } else {
-                echo 'Not Registered';
                 header("Location: ../401.html");
                 exit();
             }
         } else {
-            echo 'Not Registered';
             header("Location: ../401.html");
             exit();
         }

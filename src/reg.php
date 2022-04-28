@@ -77,18 +77,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $roll = $_POST['reg-roll'];
         $dept = $_POST['reg-dept'];
 
-        $temp = substr($email, 0, 8);
+        //$temp = substr($email, 0, 8);
 
-        if (strcasecmp($temp, $roll) == 0) {
-            $sql = "INSERT INTO `essay` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$email', '$name', '$roll', '$dept', current_timestamp());";
-            $res = mysqli_query($con, $sql);
-            if ($res) {
-                header("Location: ../200.html");
-                exit();
-            } else {
-                header("Location: ../401.html");
-                exit();
-            }
+
+        $sql = "INSERT INTO `essay` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$email', '$name', '$roll', '$dept', current_timestamp());";
+        $res = mysqli_query($con, $sql);
+        if ($res) {
+            header("Location: ../200.html");
+            exit();
         } else {
             header("Location: ../401.html");
             exit();

@@ -107,6 +107,8 @@
 
         if ($numRows == 1) {
             $row = mysqli_fetch_assoc($res);
+            $info = $row['edsc'];
+            
             echo '
 
 
@@ -132,7 +134,7 @@
                             </div>
 
                             <h3 class="post-single-title">' . $row['ename'] . '</h3>
-                            <p class="post-single-text">' . $row['edsc'] . '</p>
+                            <h5 class="post-single-text">' . $row['edsc'] . '</h5>
 
                             <div class="post-single-social">
                                 <div class="row row-20 align-items-center">

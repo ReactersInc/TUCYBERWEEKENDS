@@ -172,5 +172,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../401.html");
             exit();
         }
+    } elseif (strcmp($req, "oquiz") == 0) {
+        $temail = $_POST['reg-email'];
+        $tname = $_POST['reg-name'];
+        $troll = $_POST['reg-roll'];
+        $tdept = $_POST['reg-dept'];
+        $m1name = $_POST['reg-m1name'];
+        $m1roll = $_POST['reg-m1roll'];
+
+        $temp = substr($temail, 0, 8);
+
+        if (strcasecmp($temp, $troll) == 0) {
+            $sql = "INSERT INTO `oquiz` (`temail`, `tname`, `trollno`, `tdept`, `m1name`, `m1rollno`, `timestamp`) VALUES ('$temail', '$tname', '$troll', '$tdept', '$m1name', '$m1roll', current_timestamp());";
+            $res = mysqli_query($con, $sql);
+            if ($res) {
+                header("Location: ../200.html");
+                exit();
+            } else {
+                header("Location: ../401.html?err=1");
+                exit();
+            }
+        } else {
+            header("Location: ../401.html?err=2");
+            exit();
+        }
     }
 }

@@ -197,4 +197,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
     }
+    elseif (strcmp($req, "csquiz") == 0) {
+        $temail = $_POST['reg-email'];
+        $tname = $_POST['reg-name'];
+        $troll = $_POST['reg-roll'];
+        $tdept = $_POST['reg-dept'];
+
+        $temp = substr($temail, 0, 8);
+
+        if (strcasecmp($temp, $troll) == 0) {
+            $sql = "INSERT INTO `csquiz` (`email`, `name`, `rollno`, `dept`, `timestamp`) VALUES ('$temail', '$tname', '$troll', '$tdept', current_timestamp());";
+            $res = mysqli_query($con, $sql);
+            if ($res) {
+                header("Location: ../200.html");
+                exit();
+            } else {
+                header("Location: ../401.html?err=1");
+                exit();
+            }
+        } else {
+            header("Location: ../401.html?err=2");
+            exit();
+        }
+    }
 }

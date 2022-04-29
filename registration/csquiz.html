@@ -2,7 +2,7 @@
 <html class="wide" lang="en">
 
 <head>
-    <title>Event - Essay</title>
+    <title>CS Quiz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,6 @@
         }
     </style>
 </head>
-
 
 <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
@@ -83,17 +82,14 @@
                                     <ul class="rd-navbar-nav">
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="../index.html">Home</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="../about.html">About</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="../team.html">Team</a>
-                                        </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link"
-                                                href="../event.html">Events</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link"
                                                 href="../schedule.html">Schedule</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link"
+                                        <li class="rd-nav-item active"><a class="rd-nav-link"
                                                 href="../reg.html">Registration</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link"
@@ -103,9 +99,8 @@
                                 </div>
                             </div>
                             <!-- RD Navbar Collapse-->
-                            <div class="rd-navbar-collapse"><a class="button button-primary"
-                                    href="https://forms.gle/ZYeYr3K2meXhqUnF9" target="_blank"
-                                    data-triangle=".button-overlay"><span>Submit Article Here</span><span
+                            <div class="rd-navbar-collapse"><a class="button button-primary" href="reg.html"
+                                    data-triangle=".button-overlay"><span>Start Your Registration</span><span
                                         class="button-overlay"></span></a>
                             </div>
                         </div>
@@ -113,117 +108,68 @@
                 </nav>
             </div>
         </header>
+
         <!-- Breadcrumbs-->
-
-
         <section class="breadcrumbs-custom bg-image context-dark"
             style="background-image: url(../images/bg-breadcrumbs-01-1894x424.jpg);">
             <div class="container">
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Event</a></li>
-                </ul>
-                <h3 class="breadcrumbs-custom-title">Essay Competition</h3>
+                <h4 class="breadcrumbs-custom-title">CS Quiz REGISTRATION FORM</h4>
+                <h6 class="breadcrumbs-custom-title">Individual Event</h6>
             </div>
         </section>
-        <!-- Section Our News-->
-        <section class="section section-lg bg-default">
+        <!--Forms-->
+        <section class="section section-lg bg-default text-center">
             <div class="container">
-                <div class="row row-50">
-                    <div class="col-lg-7 col-xl-8">
-                        <article class="post-single">
-                            <div class="row row-30">
-                                <div class="post-single-img col-lg-4">
-                                    <img src="../img/essay.png" alt="" width="370" height="472"
-                                        style="border-radius: 50%;" />
-                                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9 col-lg-7 col-xl-5">
+                        <!--RD Mailform-->
+                        <form class="rd-form rd-form-centered" action="../src/reg.php?req=csquiz" method="post">
+                            <div class="form-wrap">
+                                <input class="form-input" id="reg-email" type="email" name="reg-email"
+                                    data-constraints="@Email @Required" required>
+                                <label class="form-label" for="reg-email">
+                                    E-mail
+                                </label>
+                                <p>* Only tezu email will be considered (abc18012@tezu.ac.in)</p>
                             </div>
-
-                            <h3 class="post-single-title">Essay Competition</h3>
-
-                            <h4 class="my-4">Topic</h4>
-                            <h4 class="my-4">" Russia - Ukraine war and its impact on global economy "</h4>
-
-                            <h4>Rules</h4>
-                            <h5 class="post-single-text my-3 mx-2">
-                                1. It is completely an individual event. <br>
-                                2. Submissions are to be done in the submission button as given below. <br>
-                                3. Along with the main article, a plagarism report is to be submitted in the same
-                                submission form. <br>
-                                4. Turnitin Details : <br>
-                            </h5>
-                            <b class="mx-lg-4">Class ID : 34408860</b> <br>
-                            <b class="mx-lg-4">Enrollment Key : <span class="lowercase">cse_essay</span></b>
-                            <h5 class="post-single-text my-3 mx-2">
-                                5. Results will be declared in this page itself. <br>
-                                6. File Naming should be done in format of RollNo_Article. EXAMPLE :
-                                CSB18012_Article.docx <br>
-                                7. File Naming should be done in format of RollNo_TURNITIN. EXAMPLE :
-                                CSB18012_TURNITIN.docx <br>
-                                8. WORD LIMIT : 3000 words
-                            </h5>
-
-                            <h4 class="my-4">Submissions by : 30th April , 11 p.m</h4>
-
-                            <div class="post-single-navigation">
-                                <div class="row row-15">
-                                    <div class="col-sm-6">
-                                        <a class="button button-block button-primary"
-                                            href="https://forms.gle/ZYeYr3K2meXhqUnF9" target="_blank"
-                                            data-triangle=".button-overlay">
-                                            <span>Submit Article Here</span>
-                                            <span class="button-overlay"></span>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="form-wrap">
+                                <input class="form-input" id="reg-name" type="text" name="reg-name"
+                                    data-constraints="@Required">
+                                <label class="form-label" for="reg-name" required>
+                                    Name
+                                </label>
                             </div>
-
-                            <div class="post-single-social">
-                                <div class="row row-20 align-items-center">
-                                    <div class="col-sm-6">
-                                        <dl class="post-single-terms">
-                                            <dt>Tags:</dt>
-                                            <dd><a href="#">Event</a> <span>,</span> <a href="#">Essay</a>
-                                                <span>,</span> <a href="#">Russia - Ukraine War</a>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </div>
+                            <div class="form-wrap">
+                                <input class="form-input" id="reg-roll" type="text" name="reg-roll"
+                                    data-constraints="@Required">
+                                <label class="form-label" for="reg-roll" required>
+                                    Roll No
+                                </label>
                             </div>
-
-                            <div class="post-single-about">
-                                <div class="unit unit-spacing-lg align-items-center d-block d-xs-flex">
-                                    <div class="unit-left"><img src="../img/5867.jpg" alt="" width="170" height="190" />
-                                    </div>
-                                    <div class="unit-body">
-                                        <h5 class="post-single-about-title">Prize Money Awaits</h5>
-                                        <p class="post-single-about-text">
-                                            Prize money and Certificates for winner and runner's up will given.
-                                            Gear up and All the best !!!!
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="form-wrap">
+                                <input class="form-input" id="reg-dept" type="text" name="reg-dept"
+                                    data-constraints="@Required">
+                                <label class="form-label" for="reg-dept" required>
+                                   Department
+                                </label>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-5 col-xl-4">
-                        <a class="button button-block button-primary my-3" href="https://forms.gle/ZYeYr3K2meXhqUnF9"
-                            target="_blank" data-triangle=".button-overlay">
-                            <span>Submit Article Here</span>
-                            <span class="button-overlay"></span>
-                        </a>
-                        <img src="../img/essay-poster.jpg" alt="" width="370" height="472" style="border-radius: 5%;" />
-                        <iframe class="m-4" width="320" style="border-radius: 5%;" height="320"
-                            src="https://www.youtube.com/embed/yxNFbD5zWi4">
-                        </iframe>
+                            <button class="button button-block button-primary" type="submit"
+                                data-triangle=".button-overlay">
+                                <span>
+                                    Submit
+                                </span>
+                                <span class="button-overlay">
+                                </span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
 
+        <hr>
 
 
-        <!-- Section Pre Footer-->
         <section class="section section-lg bg-gray-900">
             <div class="container">
                 <div class="row row-30">

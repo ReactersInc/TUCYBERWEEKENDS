@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <!-- RD Navbar Collapse-->
-                            <div class="rd-navbar-collapse"><a class="button button-primary" href="reg.html" data-triangle=".button-overlay"><span>Start Your Registration</span><span class="button-overlay"></span></a>
+                            <div class="rd-navbar-collapse"><a class="button button-primary" href="reg.html" data-triangle=".button-overlay"><span>Registration Over</span><span class="button-overlay"></span></a>
                             </div>
                         </div>
                     </div>
